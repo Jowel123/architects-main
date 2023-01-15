@@ -1,0 +1,280 @@
+
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sofia Sans', sans-serif;
+
+}
+.container{
+    background-color: bisque ;
+}
+.max-width{
+    width: 1440px;
+    margin: 0 auto;
+}
+@media screen and (max-width:576px) {
+    .max-width{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 12px;
+    }
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.menu  {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    
+}
+.new-brand{
+    text-align: center;
+    margin-top: 40px;
+}
+.btn{
+    background-color: chocolate;
+    height: 35px;
+    width: 120px;
+    color: white;
+}
+
+.new-brand img{
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* responsive */
+@media screen and (max-width:575px) {
+    nav{
+        display: block;
+    }
+    .max-width{
+        width: 100%;
+    }
+}
+
+/* second section */
+.second-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.second-section h3 span{
+    color: rgb(238, 196, 10) !important;
+}
+.quick{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.quick img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.second-section .btn-second{
+    background-color: rgb(238, 196, 10) ;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+}
+
+/* responsive */
+
+@media screen and (max-width: 575px) {
+    .second-section{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .quick{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+/* dekstop section */
+
+.dekstop {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 140px;
+    margin-top: 50px;
+}
+.features{
+    margin-top: 50px;
+   
+}
+.love{
+    box-shadow: 2px 3px 8px;
+    padding: 20px 10px;
+    margin: 12px 0;
+    border: 1px solid;
+}
+
+.enjoy {
+    position: relative;
+}
+
+.enjoy img{
+    width: 100%;
+}
+
+.enjoy .btn{
+    position: absolute;
+    bottom: 0px;
+    left: -100px;
+    padding: 24px;
+    height: 100px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* responsive */
+
+@media screen and (max-width: 575px) {
+    .dekstop {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 48px;
+        margin-top: 24px;
+    }
+    .features{
+        margin-top: 0px;
+    }
+    .enjoy .btn{
+        left: 0px;
+    }
+}
+/* some facts section */
+.some-facts{
+    margin-top: 50px;
+}
+
+.box{
+    display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-top: 30px;
+}
+
+.box .icon{
+    border: 1px solid;
+    margin-bottom: 16px;
+    width: 400px;
+    height: 400px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: all .5s ease-in-out;
+}
+
+.box .icon:hover{
+    transform: scale(1.1);
+    background-color: blueviolet;
+    color: #fff;
+}
+
+.box .icon img{
+    width: 100px;
+}
+.love p{
+    margin-top: 50px;
+    padding-top: 6px;
+}  
+
+
+
+/* responsive */
+
+@media screen and (max-width: 575px) {
+    .box{
+        display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          margin-top: 30px;
+    }
+    
+    .box .icon{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .box .icon img{
+        width: 100px;
+    }
+    .love p{
+        margin-top: 50px;
+        padding-top: 6px;
+    }   
+}
+
+/* food */
+.food-wrap{
+    position: relative;
+}
+.single-food{
+    margin-top: 16px;
+}
+.single-food h1{ 
+    color: brown;
+}
+
+.single-food p{
+    color: rgb(192, 118, 21);
+}
+
+/* footer */
+
+
+.available{
+    margin-top: 150px;
+}
+
+.our{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 100px;
+}
+.footer p{
+    background-color: antiquewhite;
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 32px;
+    
+} 
+
+/* responsive */
+@media screen and (max-width: 575px) {
+    .available{
+        margin-top: 48px;
+    }
+    
+    .our{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 48px;
+    }
+
+    .our .our-img{
+        margin-bottom: 16px;
+    }
+    .footer p{
+        margin-top: 48px;
+        text-align: center;
+        margin-bottom: 50px;
+        padding: 32px;
+        
+    } 
+}
